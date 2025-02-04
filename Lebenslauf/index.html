@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lebenslauf Melanie Schreyer" />
+    <meta name="keywords" content="HTML, CSS, Lebenslauf, Melanie Schreyer" />
+    <meta name="author" content="Melanie Schreyer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lebenslauf Melanie Schreyer</title>
+    <meta property="og:title" content="Melanie Schreyers Lebenslauf" />
+    <meta property="og:image" content="" />
+    <meta property="”og:url”" content="”contenturl”" />
+    <meta
+            property="”og:description”"
+            content="Dieser Lebenslauf wurde in HTML und CSS geschrieben."
+    />
+    <meta property="”og:type”" content="”article”" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+        body {
+            font-family: "Texturina", serif;
+        }
+        html body {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            display: flex;
+        }
+
+        .sidecontainer {
+            height: 170px;
+            width: 25%;
+            float: left;
+        }
+
+        .midcontainer {
+            display: flex;
+            width: 75px;
+        }
+
+        .progresscontainer {
+            display: flex;
+            gap: 10%;
+            align-items: center;
+        }
+
+        p {
+            font-size: 0.83em;
+        }
+
+        .p {
+            color: black;
+            font-weight: normal;
+        }
+
+        h1 {
+            display: block;
+            font-size: 6em;
+            color: white;
+            margin: 0;
+            font-weight: bold;
+            unicode-bidi: isolate;
+        }
+        h2 {
+            display: block;
+            font-size: 3em;
+            color: white;
+            margin-top: 10px;
+            font-weight: bold;
+            unicode-bidi: isolate;
+        }
+
+        h4 {
+            display: block;
+            font-size: 2em;
+            color: black;
+            margin-block-start: 5px;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            font-weight: bold;
+            unicode-bidi: isolate;
+            margin-left: 20px;
+        }
+        h5 {
+            display: block;
+            font-size: 1.25em;
+            color: black;
+            margin-block-start: 5px;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            font-weight: bold;
+            unicode-bidi: isolate;
+        }
+        .h5 {
+            color: black;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 26px;
+            height: 26px;
+            width: 26px;
+        }
+        header {
+            height: 20%;
+            background-color: #3c5565;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        header .header-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            font-size: 1em;
+            font-weight: bold;
+            color: #3c5565;
+        }
+        hr {
+            height: 4px;
+            background-color: lightgray;
+            color: lightgray;
+            border: none;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        aside {
+            padding-top: 5%;
+            height: 100vh;
+            text-align: center;
+            width: 25%;
+            padding-left: 5px;
+            padding-right: 5px;
+            float: left;
+            background-color: lightgray;
+        }
+        .sidebar {
+            position: sticky;
+            top: 0;
+        }
+        section {
+            width: 75%;
+            padding-left: 20px;
+        }
+        img {
+            border: 5px solid white;
+            margin-bottom: 45px;
+        }
+        .headings {
+            margin-left: 1px;
+            gap: 5px;
+            align-items: center;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        .box {
+            width: 250px;
+            height: 25px;
+            background: lightgray;
+        }
+        .full {
+            width: 250px;
+            height: 25px;
+            background: #3c5565;
+        }
+        .spanish {
+            width: 50px;
+            height: 25px;
+            background: #3c5565;
+        }
+        .javascript {
+            width: 50px;
+            height: 25px;
+            background: #3c5565;
+        }
+
+        .java {
+            width: 125px;
+            height: 25px;
+            background: #3c5565;
+        }
+
+        .html {
+            width: 125px;
+            height: 25px;
+            background: #3c5565;
+        }
+
+        .css {
+            width: 150px;
+            height: 25px;
+            background: #3c5565;
+        }
+
+        .typescript {
+            width: 100px;
+            height: 25px;
+            background: #3c5565;
+        }
+        .csharp {
+            width: 125px;
+            height: 25px;
+            background: #3c5565;
+        }
+    </style>
+</head>
+
+<header class="header-container">
+    <div class="header-inner">
+        <h1 class="header-headline">Melanie Schreyer</h1>
+        <h2>Lebenslauf</h2>
+    </div>
+</header>
+<body>
+<div style="flex: auto">
+    <aside class="sidebar">
+        <img
+                src="/Lebenslauf/Bewerbungsfoto.png"
+                alt="Bild Lebenslauf"
+                height="300"
+                width="250"
+        />
+
+        <h5>Geburtsdaten</h5>
+        <p>
+            20.12.1996 <br />
+            in Dachau
+        </p>
+        <h5>Anschrift</h5>
+        <p>
+            Birkenrieder Str. 8 <br />
+            85221 Dachau
+        </p>
+        <h5>Telefon</h5>
+        <p>+49 172 5848679</p>
+        <h5>E-Mail</h5>
+        <a href="mailto: melanieschreyer20121996@gmail.com">
+            melanieschreyer20121996@gmail.com
+        </a>
+    </aside>
+
+    <section>
+        <article>
+            <div>
+                <div class="headings">
+                    <i class="material-symbols-outlined">work</i>
+                    <h4>Berufliche Laufbahn</h4>
+                    <br /><br />
+                </div>
+            </div>
+            <hr />
+            <div>
+                <h5 class="h5">06/2024 - 10/2024</h5>
+                <h5 class="h5">
+                    trefox GmbH <br />
+                    <p class="p">Anwendungsentwickler / Assistenz der Geschäftsführung</p>
+                </h5>
+            </div>
+            <hr />
+
+
+            <div>
+                <div class="headings">
+                    <i class="material-symbols-outlined">school</i>
+                    <h4>Schulische Laufbahn</h4>
+                    <br /><br />
+                </div>
+            </div>
+            <hr />
+            <div>
+                <h5 class="h5">09/2022 - 02/2023</h5>
+                <h5 class="h5">
+                    Städt. Berufsschule für Informationstechnik München <br />
+                    <p class="p">Fachrichtung: Anwendungsentwicklung</p>
+                </h5>
+            </div>
+            <hr />
+            <div>
+                <h5 class="h5">09/2018 - 07/2021</h5>
+                <h5 class="h5">
+                    Fachoberschule für Sozialwesen und Gesundheit München Nord
+                    <br />
+                    <p class="p">Fachrichtung: Gesundheit</p>
+                </h5>
+            </div>
+            <hr />
+            <div>
+                <h5 class="h5">09/2016 - 07/2018</h5>
+                <h5 class="h5">
+                    Städt. Riemerschmid-Wirtschaftschule, München <br />
+                    <p class="p" style="font-style: italic">
+                        Mittlerer Bildungabschluss
+                    </p>
+                </h5>
+            </div>
+            <hr />
+            <div>
+                <h5 class="h5">02/2014 - 08/2016</h5>
+                <h5 class="h5">
+                    Erkrankung mit stationärem Klinikaufenthalt und vollständiger
+                    Genesung
+                </h5>
+                <br /><br />
+                <br />
+            </div>
+            <hr />
+            <div>
+                <h5 class="h5">09/2011 - 02/2014</h5>
+                <h5 class="h5">
+                    Berufsschule für Kinderpflege, Starnberg <br />
+                    <p class="p">Abbruch aus gesundheitlichen Gründen</p>
+                </h5>
+            </div>
+            <hr />
+            <div>
+                <h5 class="h5">09/2006 - 07/2011</h5>
+                <h5 class="h5">
+                    Mittelschule an der Anton-Günter-Straße, Dachau <br />
+                    <p class="p" style="font-style: italic">
+                        Qualifizierender Hauptschulabschluss
+                    </p>
+                </h5>
+            </div>
+            <hr />
+            <div>
+                <h5 class="h5">09/2002 - 07/2006</h5>
+                <h5 class="h5">Grundschule Dachau Ost, Dachau</h5>
+                <br /><br />
+                <br />
+            </div>
+            <hr />
+        </article>
+        <article>
+            <div>
+                <div class="headings">
+                    <i class="material-symbols-outlined">interests</i>
+                    <h4>Kenntnisse und Interessen</h4>
+                    <br /><br />
+                </div>
+            </div>
+            <hr />
+
+            <div class="sidecontainer">
+                <h5 class="h5">Sprachkenntnisse</h5>
+            </div>
+            <div class="progresscontainer">
+                <div class="midcontainer">
+                    <h5 class="h5">Deutsch</h5>
+                </div>
+                <div class="box">
+                    <div class="full"></div>
+                </div>
+            </div>
+            <div class="progresscontainer">
+                <div class="midcontainer">
+                    <h5 class="h5">Englisch</h5>
+                </div>
+                <div class="box">
+                    <div class="full"></div>
+                </div>
+            </div>
+            <div class="progresscontainer">
+                <div class="midcontainer">
+                    <h5 class="h5">Spanisch</h5>
+                </div>
+                <div class="box">
+                    <div class="spanish"></div>
+                </div>
+            </div>
+
+            <hr />
+
+            <style>
+                .experience {
+                    display: flex;
+                    margin: 50px 0;
+                }
+
+                .experience .experience-header {
+                    width: 25%;
+                }
+
+                .experience .experience-inner {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                }
+
+                .experience .experience-inner .experience-inner-bar {
+                    display: flex;
+                    gap: 16px;
+                }
+
+                h5 {
+                    line-height: 1;
+                    margin-top: 0;
+                }
+            </style>
+
+            <div class="sidecontainer">
+                <h5 class="h5">IT - Kenntnisse</h5>
+            </div>
+            <div class="progresscontainer">
+                <div class="midcontainer">
+                    <h5 class="h5">Javascript</h5>
+                </div>
+                <div class="box">
+                    <div class="javascript"></div>
+                </div>
+            </div>
+            <div class="progresscontainer">
+                <div class="midcontainer">
+                    <h5 class="h5">Typescript</h5>
+                </div>
+                <div class="box">
+                    <div class="typescript"></div>
+                </div>
+            </div>
+            <div class="progresscontainer">
+                <div class="midcontainer">
+                    <h5 class="h5">Java</h5>
+                </div>
+                <div class="box">
+                    <div class="java"></div>
+                </div>
+            </div>
+            <div class="progresscontainer">
+                <div class="midcontainer">
+                    <h5 class="h5">C#</h5>
+                </div>
+                <div class="box">
+                    <div class="csharp"></div>
+                </div>
+            </div>
+            <div class="progresscontainer">
+                <div class="midcontainer">
+                    <h5 class="h5">HTML</h5>
+                </div>
+                <div class="box">
+                    <div class="html"></div>
+                </div>
+            </div>
+            <div class="progresscontainer">
+                <div class="midcontainer">
+                    <h5 class="h5">CSS</h5>
+                </div>
+                <div class="box">
+                    <div class="css"></div>
+                </div>
+            </div>
+
+            <hr />
+            <div class="sidecontainer">
+                <h5 class="h5">Hobbies</h5>
+            </div>
+            <div class="progresscontainer">
+                <div>
+                    <p class="p">
+                        singen, Gitarre spielen, zeichnen, lesen, Tischtennis spielen
+                    </p>
+                </div>
+            </div>
+            <hr />
+        </article>
+        <article>
+            <div>
+                <div class="headings">
+                    <i class="material-symbols-outlined">explore</i>
+                    <h4>Auslandsaufenthalte</h4>
+                    <br /><br />
+                </div>
+            </div>
+            <hr />
+            <div class="sidecontainer">
+                <h5 class="h5">Erasmus+ Auslandspraktikum auf Malta</h5>
+            </div>
+            <div class="progresscontainer">
+                <div>
+                    <p class="p">
+                        2-wöchiges Praktikum in einer Behörde auf Malta - Online-Artikel auf Englisch verfassen
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+</div>
+</body>
+</html>
